@@ -1,0 +1,40 @@
+/* mobile devices */
+@media (min-width: 375px ) and (max-width: 640px) {
+    h1 {
+     color: red;
+    }
+   .flex justify-between items-center p-4{
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   }
+
+   .flex items-center{
+    grid-template-columns: 1fr;
+   }
+    .hover:bg-amber-200 py-2 px-4 text-gray-50 rounded-md{
+        justify-content: center;
+        width: 100%;
+    }
+   }
+   
+   /* tablet */
+   @media (min-width: 640px) and (max-width: 1250px) {
+    h1 {
+     color: blue;
+    }
+    .flex justify-between items-center p-4{
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+       }
+    
+   }
+   
+   
+   /* Desktop */
+   @media (min-width: 1280px) {
+    
+   }

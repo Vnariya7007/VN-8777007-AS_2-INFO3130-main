@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/png" href="img/nimbus.png">
+    <title>Vegeta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/mediaQuery.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <style>
+    .spinner-button {
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 8px 20px 9px;
+    font-size: 12px;
+    color: #000;
+    background-color: transparent
+}
+
+
+.button {
+  position: relative;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid transparent;
+  border-top-color: #f50404;
+  border-radius: 50%;
+  animation: button-loading-spinner 2s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+
+
+    </style>
+</head>
+<body class="flex flex-col min-h-screen  max-w-screen-lg mx-auto">
+    <header class="sticky top-0">
+        <nav class="flex justify-between items-center p-4">
+
+            <img src="img/Dragon_Ball_logo.webp" alt="logo" class="w-44">
+
+            <div class="navbar">
+                <a class="hover:bg-green-400 hover:border-green-400 hover:border-8 hover:underline hover:transition-all mx-10" href="#abtContent">About</a>
+                <a class="hover:bg-green-400 hover:border-green-400 hover:border-8 hover:underline hover:transition-all  mx-10" href="#persoContent">Personality</a>
+                <a class="hover:bg-green-400 hover:border-green-400 hover:border-8 hover:underline hover:transition-all ml-10" href="#abilitContent">Abilities</a>
+            </div>
+        </nav>
+        <h1 class="flex justify-start ml-6 text-3xl animate-bounce" style="font-family: 'Press Start 2P';">Vegeta</h1>
+    </header>
+    <!----------------------------------------------------------------------remove--------------------------------------------->
+    <main class="flex-1 bg-gray-300 m-auto w-auto">
+
+        <!--- Imagessssssssssss-->
+        <section class="flex items-center">
+            <img class="ml-3 mt-16 w-auto" src="img/Vegeta_Dragon_Ball.jpg" alt="#">
+            <img class="-ml-40 mt-16 w-auto animate-pulse" src="img/nimbus.png" alt="#">
+            <img class="ml-40 mt-24 w-72" src="img/Manga Vegeta.png"  alt="#">
+
+            <div class="mt-44 -ml-96">
+                <a id="btnFetch" onclick="this.classList.toggle('button--loading')" class="button spinner-button hover:bg-amber-200 py-2 px-4 hover:drop-shadow-2xl transition-all ease-linear hover:-translate-y-3 text-gray-50 rounded-md"><span class="button__text" style="color:black; font-family: 'Press Start 2P';" ;>Learn </span><span class="button__text"  style="color:black; font-family: 'Press Start 2P';">More</span></a>
+            </div>
+                
+        </section>
+
+            <!--- Aboutttttttttttt-->
+        <section class=" p-20 rounded-md -mt-8 mb-24 font-press-start">
+            <h2 class="text-4xl mb-4 font-press-start " id="abtContent">About</h2>
+            <p class="text-3xl leading-loose hover:ring-purple-500 hover:ring-2 transition-all ease-linear rounded-md">Vegeta (ベジータ Bejīta), recognized as Prince Vegeta is the prince of the fallen Saiyan race
+                and the husband of Bulma, the father of Trunks and Bulla, the eldest son of King Vegeta, as well as one of
+                the main
+                characters of the Dragon Ball series.</p>
+        </section>
+
+            <!--Abilitiessssssssssss------->
+        <section  class="p-20 rounded-md -mt-24 mb-24 font-press-start">
+            <h2 class="text-green-700 text-4xl mb-4 font-press-start" id="abilitContent">Abilities</h2>
+            <h3 class="text-2xl mt-10 mb-4 font-press-start hover:ring-purple-500 hover:ring-2 transition-all ease-linear rounded-md">1. Super Saiyan</h3>
+            <div class="flex items-start">
+                    <img src="img/SSj.jpg" alt="#">
+                <div>
+                    <p class="text-2xl leading-loose p-2 -mt-4">Though it was only a Saiyan Legend at the time, Vegeta was fascinated with this transformation and obsessed
+                        over obtaining it so that he could cement his status as a warrior of it so that he could cement
+                         his status as a warrior of could could cement his status as a
+                        cement his status as a warrior of legend and the strongest in history. </p>
+                </div>
+            </div>
+            <p class="text-2xl leading-loose p-2 -mt-4">
+                Seeing Goku achieve this form first and used it to defeat Frieza only fueled his desire to
+                unlock the
+                potential hidden within him.
+            </p>
+                <h3 class="text-2xl mt-24 mb-4 font-press-start hover:ring-purple-500 hover:ring-2 transition-all ease-linear rounded-md">2. Majin Vegeta</h3>
+                <div class="flex items-start">
+                    <img src="img/VegetaMajinStateNV.webp" alt="#">
+                <div>
+                    <p class="text-2xl leading-loose p-2 -mt-4">Majin Vegeta more properly known as Demon Prince is a powered up form
+                        taken on by Vegeta. Vegeta takes this form when Babidi harnesses the evil in Vegeta's heart to take control
+                        of him,
+                        giving him a significant boost in power, including maintaining his Super Saiyan form. While having the Demon </p>
+                </div>
+                </div>
+                <p class="text-2xl leading-loose p-2 -mt-4">mark on
+                    his forehead, dark black lines around the eyes, and increased muscle mass puff up to the level that veins
+                    appear all over Vegeta's body and face. 
+                    "Because I wanted him to reawaken the evil in my heart.
+                    I wanted him to return me to the way I was before! I was the perfect warrior! Cold and ruthless! I lived by my strength alone,
+                    uninhibited by foolish emotion! But slowly...over the years...I became one of you, my quest for greatness
+                    gradually giving way
+                    to this life of mediocrity. I awoke one day to find that I had settled down, formed a family...I had even
+                    grown quite
+                    fond of them. Would you believe, I almost started to think the Earth was a nice place to live...? Do you
+                    understand now,
+                    Kakarot? That's why I needed Babidi to set me free. By releasing the evil in my heart, he has freed me of
+                    these petty
+                    attachments...and I'd have to say, it feels pretty good."</p>
+        </section>
+
+            <!--- Personalityyyyyyyyyyyy-->
+        <section class=" p-20 rounded-md -mt-32 mb-24 font-press-start">
+            <h2 class="text-4xl mb-4 font-press-start" id="persoContent">Personality:</h2>
+            <p class="text-3xl leading-loose hover:ring-purple-500 hover:ring-2 transition-all ease-linear rounded-md">Vegeta is arrogant throughout the series and becomes bitter due to the
+                abuse his race suffered at the hands of Frieza.Following the destruction of his homeworld Planet
+              Vegeta,
+              his hatred toward Frieza grows. <span style="color: #497208;">His royalty seems to have bestowed upon him an inflated
+                  sense of superiority, holding himself above nearly everyone he encounters.</p>
+        </section>
+
+            <!--- Footerrrrrrrrrrrr-->
+         <footer>
+            <p class="text-center">Copyright &copy; Vatsal Nariya 8777007</p>
+        </footer>    
+                   
+        
+    </main>
+</body>
+</html>
